@@ -17,7 +17,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.articles);
     return (
       <main>
         <h1>{this.state.category} feed</h1>
