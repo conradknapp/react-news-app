@@ -9,6 +9,6 @@ export default class News extends Component {
   }
 
   render() {
-    return <ul>{this.renderNewsItems()}</ul>;
+    return <ul className="card-grid">{this.renderNewsItems()}</ul>;
   }
 }
