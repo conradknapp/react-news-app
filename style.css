@@ -3,6 +3,8 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background: rgb(220,174,238);
+  background: radial-gradient(circle, rgba(220,174,238,1) 0%, rgba(233,163,148,1) 100%);
 }
 
 *, *:before, *:after {
@@ -19,7 +21,6 @@ ol, ul {
   list-style: none;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -28,7 +29,7 @@ img {
 /* Styles */
 
 .container {
-  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -48,10 +49,22 @@ img {
   box-shadow: -3px 3px 10px 0px rgba(168, 168, 168, 0.4);
   background: #ddd;
   max-height: 500px;
+  overflow: hidden;
+}
+
+.card img {
+  transition: all .2s ease;
+  vertical-align: middle;
+}
+
+img:hover {
+  transform:scale(1.1);
 }
 
 .card-content {
   padding: 1em 1.5em;
+  overflow: hidden;
+  display: inline-block;
 }
 
 img {
@@ -64,3 +77,19 @@ a, a:link {
   color: teal;
 }
 
+form {
+  margin: 0.5em;
+}
+
+form > * {
+  margin: 0.2em;
+}
+
+button, input, select {
+  padding: 0.2em;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 0.5em;
+}
